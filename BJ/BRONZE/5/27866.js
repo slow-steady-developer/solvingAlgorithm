@@ -1,0 +1,2 @@
+let inputString = require('fs').readFileSync(process.platform === "linux" ? "/dev/stdin" : "../../answerSheet.txt").toString().trim().split('\n');
+console.log((inputString[0].charAt(parseInt(inputString[1].trim())-1)));

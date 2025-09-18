@@ -1,0 +1,10 @@
+let numbers = require('fs').readFileSync(process.platform === "linux" ? "/dev/stdin" : "./answerSheet.txt").toString().trim().split("\n");
+numbers[0] = parseInt(numbers[0]);
+let secondNumbers = numbers[1].split('');
+let calculation_1 = numbers[0] * parseInt(secondNumbers[2]);
+let calculation_2 = numbers[0] * parseInt(secondNumbers[1]);
+let calculation_3 = numbers[0] * parseInt(secondNumbers[0]);
+console.log(calculation_1);
+console.log(calculation_2);
+console.log(calculation_3);
+console.log(calculation_1 + calculation_2 * 10 + calculation_3 * 100);

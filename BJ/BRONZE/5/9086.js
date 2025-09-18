@@ -1,0 +1,2 @@
+let inputString = require('fs').readFileSync(process.platform === "linux" ? "/dev/stdin" : "../../answerSheet.txt").toString().trim().split('\n');
+inputString.forEach((val,idx) => { if(idx !== 0) {val = val.trim(); console.log(val[0] + val[val.length-1]);} })

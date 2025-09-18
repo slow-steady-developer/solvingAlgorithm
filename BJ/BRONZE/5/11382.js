@@ -1,0 +1,2 @@
+let numbers = require('fs').readFileSync(process.platform === "linux" ? "/dev/stdin" : "./answerSheet.txt").toString().trim().split(" ");
+console.log(parseInt(numbers[0]) + parseInt(numbers[1]) + parseInt(numbers[2]));
